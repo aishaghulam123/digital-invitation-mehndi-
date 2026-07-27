@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ayesha &amp; Zayan · A Mehndi Invitation</title>
+<meta name="description" content="You are invited to the mehndi celebration of Ayesha & Zayan — an evening in the night garden." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Particles + cursor -->
+  <div id="particles" class="particles"></div>
+  <div id="cursor-trail" class="cursor-trail"><div class="ct-inner"></div></div>
+  <div id="cursor" class="cursor"><div class="c-inner"></div></div>
+
+  <!-- Music toggle -->
+  <button id="music-toggle" class="music-toggle" aria-label="toggle music">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="3" /><path d="M12 2 v4" />
+    </svg>
+    <span class="mt-label">off</span>
+  </button>
+
+  <!-- Opening seal -->
+  <div id="opening" class="opening-root">
+    <div class="fold-panel fold-panel-l"></div>
+    <div class="fold-panel fold-panel-r"></div>
+    <div class="opening-inner">
+      <div class="seal-wrap">
+        <div class="seal-half seal-half-left"><svg viewBox="0 0 200 200" class="seal-emblem">
+          <defs><radialGradient id="sealGrad" cx="35%" cy="30%">
+            <stop offset="0%" stop-color="oklch(0.88 0.15 70)"/><stop offset="45%" stop-color="oklch(0.65 0.16 55)"/><stop offset="100%" stop-color="oklch(0.35 0.1 45)"/>
+          </radialGradient></defs>
+          <circle cx="100" cy="100" r="90" fill="url(#sealGrad)"/>
+          <circle class="seal-ring" cx="100" cy="100" r="78" fill="none" stroke="oklch(0.3 0.08 45)" stroke-width="1" stroke-dasharray="2 3"/>
+          <g fill="none" stroke="oklch(0.28 0.06 45)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M100 40 Q120 70 100 100 Q80 70 100 40 Z"/><path d="M100 160 Q120 130 100 100 Q80 130 100 160 Z"/>
+            <path d="M40 100 Q70 80 100 100 Q70 120 40 100 Z"/><path d="M160 100 Q130 80 100 100 Q130 120 160 100 Z"/>
+            <circle cx="100" cy="100" r="10" fill="oklch(0.3 0.08 45)"/>
+          </g>
+          <text x="100" y="105" text-anchor="middle" font-family="serif" font-size="18" fill="oklch(0.2 0.05 45)" font-style="italic">A · Z</text>
+        </svg></div>
+        <div class="seal-half seal-half-right"><svg viewBox="0 0 200 200" class="seal-emblem">
+          <circle cx="100" cy="100" r="90" fill="url(#sealGrad)"/>
+          <circle class="seal-ring" cx="100" cy="100" r="78" fill="none" stroke="oklch(0.3 0.08 45)" stroke-width="1" stroke-dasharray="2 3"/>
+          <g fill="none" stroke="oklch(0.28 0.06 45)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M100 40 Q120 70 100 100 Q80 70 100 40 Z"/><path d="M100 160 Q120 130 100 100 Q80 130 100 160 Z"/>
+            <path d="M40 100 Q70 80 100 100 Q70 120 40 100 Z"/><path d="M160 100 Q130 80 100 100 Q130 120 160 100 Z"/>
+            <circle cx="100" cy="100" r="10" fill="oklch(0.3 0.08 45)"/>
+          </g>
+          <text x="100" y="105" text-anchor="middle" font-family="serif" font-size="18" fill="oklch(0.2 0.05 45)" font-style="italic">A · Z</text>
+        </svg></div>
+        <div class="seal-crack"><svg viewBox="0 0 200 200"><path d="M100 10 L96 55 L106 95 L92 140 L104 190" stroke="oklch(0.15 0.02 60)" stroke-width="1.5" fill="none"/></svg></div>
+      </div>
+      <div class="seal-hint">an invitation for you</div>
+    </div>
+  </div>
+
+  <main class="main">
+    <!-- SCENE 1 · HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-sticky">
+        <img src="assets/mehndi-venue.jpg" alt="" class="hero-bg" />
+        <div class="hero-veil"></div>
+        <div class="fairy-lights" id="fairy-lights"></div>
+        <div class="hero-title">
+          <div class="eyebrow">The Mehndi of</div>
+          <h1 class="display gold-gradient italic">Ayesha <span class="script amp">&amp;</span> Zayan</h1>
+          <div class="rule"></div>
+          <div class="hero-sub">an evening in the night garden</div>
+          <div class="scroll-hint">scroll to unfold<div class="scroll-line"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENE 2 · VINE -->
+    <section id="vine" class="vine">
+      <svg class="vine-svg" viewBox="0 0 1000 2200" preserveAspectRatio="none">
+        <defs><linearGradient id="vineGrad" x1="0" x2="1"><stop offset="0" stop-color="oklch(0.7 0.13 80)"/><stop offset="1" stop-color="oklch(0.55 0.14 65)"/></linearGradient></defs>
+        <path id="vinePath" d="M 500 40 C 200 300, 800 500, 500 780 S 100 1200, 500 1500 S 900 1900, 500 2160" fill="none" stroke="url(#vineGrad)" stroke-width="1.5"/>
+      </svg>
+      <div class="gold-ring"><svg width="42" height="42" viewBox="0 0 42 42">
+        <defs><radialGradient id="ringG" cx="35%" cy="35%"><stop offset="0" stop-color="oklch(0.96 0.12 85)"/><stop offset="1" stop-color="oklch(0.55 0.14 65)"/></radialGradient></defs>
+        <circle cx="21" cy="21" r="12" fill="none" stroke="url(#ringG)" stroke-width="4"/><circle cx="21" cy="9" r="3" fill="oklch(0.95 0.12 85)"/>
+      </svg></div>
+      <div class="vine-content">
+        <div class="vine-reveal center">
+          <div class="script gold" style="font-size:2rem;margin-bottom:.7rem">Bismillah</div>
+          <p class="display italic quote">"And of His signs is that He created for you mates from among yourselves, that you may find tranquility in them."</p>
+          <div class="attribution">— Ar-Rum 30:21</div>
+        </div>
+        <div class="vine-reveal center">
+          <div class="eyebrow">Together with their families</div>
+          <div class="display italic gold-gradient names">Mr. &amp; Mrs. Hussain</div>
+          <div class="script alongside">alongside</div>
+          <div class="display italic gold-gradient names">Mr. &amp; Mrs. Malik</div>
+          <div class="request">request the honour of your presence at the mehndi of their beloved children</div>
+        </div>
+        <div class="vine-reveal center">
+          <div class="script huge gold-gradient text-shadow-gold">Ayesha</div>
+          <div class="weds">weds</div>
+          <div class="script huge gold-gradient text-shadow-gold">Zayan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENE 3 · BRIDE -->
+    <section id="bride" class="bride">
+      <img src="assets/bride-walk.jpg" alt="Bride entering the mehndi garden" class="bride-img" />
+      <div class="bride-veil"></div>
+      <div class="bride-cap">
+        <div class="script huge gold-gradient text-shadow-gold">the bride arrives</div>
+        <div class="eyebrow" style="margin-top:.7rem">chapter one</div>
+      </div>
+    </section>
+
+    <!-- SCENE 4 · INVITATION HANDWRITTEN -->
+    <section id="invitation" class="invitation">
+      <div class="inv-inner">
+        <div class="eyebrow">the details</div>
+        <svg viewBox="0 0 600 260" class="inv-svg">
+          <g fill="none" stroke="oklch(0.85 0.12 82)" stroke-width="1.8" stroke-linecap="round">
+            <path class="hand-path" d="M60 60 Q100 20 160 45 T280 55 T400 40 T540 55"/>
+            <path class="hand-path" d="M80 120 Q130 90 200 110 T330 115 T460 105 T520 115"/>
+            <path class="hand-path" d="M100 190 Q160 155 250 175 T400 180 T500 170"/>
+          </g>
+          <text x="300" y="80" text-anchor="middle" font-family="Great Vibes, cursive" font-size="46" fill="oklch(0.92 0.09 85)">Saturday, the tenth of October</text>
+          <text x="300" y="145" text-anchor="middle" font-family="Great Vibes, cursive" font-size="40" fill="oklch(0.88 0.09 85)">two thousand twenty-six</text>
+          <text x="300" y="210" text-anchor="middle" font-family="Great Vibes, cursive" font-size="34" fill="oklch(0.85 0.09 85)">seven o'clock in the evening</text>
+        </svg>
+        <div class="dust" id="dust"></div>
+      </div>
+    </section>
+
+    <!-- SCENE 5 · JOURNEY -->
+    <section id="journey" class="journey">
+      <div class="section-head">
+        <div class="eyebrow">walk with us</div>
+        <h2 class="display italic gold-gradient section-title">a little of our story</h2>
+      </div>
+      <div class="journey-wrap" id="journey-wrap"></div>
+    </section>
+
+    <!-- SCENE 6 · POLAROIDS -->
+  <section id="polaroids" class="polaroids">
+      <img src="assets/marigold.png" class="float-flower" style="width:160px;opacity:.4;top:0;left:10%" alt="" />
+      <img src="assets/leaf.png" class="float-flower" style="width:224px;opacity:.3;top:20%;right:5%" alt="" />
+      <img src="assets/marigold.png" class="float-flower" style="width:128px;opacity:.4;bottom:15%;left:75%" alt="" />
+      <img src="assets/leaf.png" class="float-flower" style="width:176px;opacity:.25;bottom:5%;left:8%" alt="" />
+      <div class="section-head">
+        <div class="eyebrow">a glimpse</div>
+        <h2 class="display italic gold-gradient section-title">moments already lived</h2>
+      </div>
+      <div class="polaroid-stage" id="polaroid-stage"></div>
+    </section>
+
+
+    <!-- SCENE 7 · COUNTDOWN LANTERN -->
+    <section id="countdown" class="countdown">
+      <div class="section-head">
+        <div class="eyebrow">the night approaches</div>
+        <h2 class="display italic gold-gradient section-title">counting the moments</h2>
+      </div>
+      <div class="lantern-wrap">
+        <div class="lantern-thread"></div>
+        <div class="lantern">
+          <svg viewBox="0 0 300 400" class="lantern-svg">
+            <defs><radialGradient id="lg" cx="50%" cy="45%">
+              <stop offset="0" stop-color="oklch(0.95 0.15 75 / 0.95)"/><stop offset="60%" stop-color="oklch(0.75 0.16 65 / 0.6)"/><stop offset="100%" stop-color="oklch(0.3 0.1 60 / 0.1)"/>
+            </radialGradient></defs>
+            <path d="M150 20 L130 40 L130 60 L170 60 L170 40 Z" fill="oklch(0.5 0.12 70)"/>
+            <ellipse class="lantern-glow" cx="150" cy="200" rx="150" ry="180" fill="url(#lg)" opacity=".3"/>
+            <path d="M100 70 Q150 60 200 70 L215 320 Q150 340 85 320 Z" fill="oklch(0.16 0.05 60)" stroke="oklch(0.65 0.14 70)" stroke-width="2"/>
+            <path d="M100 70 Q150 60 200 70 L215 320 Q150 340 85 320 Z" fill="url(#lg)" opacity=".7"/>
+            <g stroke="oklch(0.65 0.14 70)" stroke-width="1.2" fill="none">
+              <line x1="150" y1="70" x2="150" y2="330"/><line x1="100" y1="150" x2="200" y2="150"/><line x1="90" y1="230" x2="210" y2="230"/>
+            </g>
+            <path d="M85 320 L215 320 L225 345 L75 345 Z" fill="oklch(0.35 0.1 60)"/>
+          </svg>
+          <div class="cd-grid" id="cd-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENE 8 · VENUE MAP -->
+    <section id="venue" class="venue">
+      <div class="section-head">
+        <div class="eyebrow">the place</div>
+        <h2 class="display italic gold-gradient section-title">Bagh-e-Roshni</h2>
+        <div class="venue-addr">17 Canal View · Lahore</div>
+      </div>
+      <div class="map-frame">
+        <svg class="map-svg" viewBox="0 0 800 600">
+          <rect width="800" height="600" fill="oklch(0.1 0.04 155)"/>
+          <g stroke="oklch(0.28 0.06 155)" stroke-width="1" fill="none" id="mapGrid"></g>
+          <path d="M50 550 Q100 500 180 480 L320 460 Q400 440 480 400 L580 330 Q640 280 700 220" stroke="oklch(0.35 0.06 155)" stroke-width="18" fill="none" stroke-linecap="round" opacity=".5"/>
+          <path id="mapPath" d="M50 550 Q100 500 180 480 L320 460 Q400 440 480 400 L580 330 Q640 280 700 220" stroke="oklch(0.85 0.14 80)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="8 6"/>
+          <circle cx="50" cy="550" r="8" fill="oklch(0.85 0.14 80)"/>
+          <text x="70" y="555" fill="oklch(0.88 0.04 80)" font-family="serif" font-size="14" font-style="italic">You</text>
+          <g transform="translate(700 220)">
+            <circle r="16" fill="oklch(0.85 0.14 80)" opacity=".3"><animate attributeName="r" values="16;30;16" dur="2.5s" repeatCount="indefinite"/></circle>
+            <circle r="10" fill="oklch(0.9 0.14 75)"/>
+            <text x="20" y="6" fill="oklch(0.9 0.09 85)" font-family="serif" font-size="18" font-style="italic">Bagh-e-Roshni</text>
+          </g>
+        </svg>
+      </div>
+      <div class="maps-link"><a href="#">open in maps →</a></div>
+    </section>
+
+    <!-- SCENE 9 · DRESS -->
+    <section id="dress" class="dress">
+      <div class="section-head">
+        <div class="eyebrow">please wear</div>
+        <h2 class="display italic gold-gradient section-title">the palette of the night</h2>
+      </div>
+      <div class="swatches" id="swatches"></div>
+    </section>
+
+    <!-- SCENE 10 · RSVP -->
+    <section id="rsvp" class="rsvp">
+      <div class="section-head">
+        <div class="eyebrow">will you join us</div>
+        <h2 class="display italic gold-gradient section-title">respond, gently</h2>
+      </div>
+      <div class="rsvp-card-wrap" id="rsvp-wrap">
+        <div class="rsvp-card" id="rsvp-card">
+          <!-- Front -->
+          <div class="rsvp-face rsvp-front">
+            <svg width="80" height="80" viewBox="0 0 80 80" class="rsvp-emblem">
+              <g fill="none" stroke="oklch(0.78 0.13 82)" stroke-width="1">
+                <circle cx="40" cy="40" r="30"/><circle cx="40" cy="40" r="22"/>
+                <path d="M40 15 L47 30 L62 32 L51 42 L54 58 L40 50 L26 58 L29 42 L18 32 L33 30 Z" fill="oklch(0.78 0.13 82 / 0.2)"/>
+              </g>
+            </svg>
+            <div class="script gold-gradient" style="font-size:2.5rem">Ayesha &amp; Zayan</div>
+            <div class="mini-rule"></div>
+            <div class="display italic" style="color:oklch(0.88 0.04 80)">a mehndi to remember</div>
+            <button id="flip-btn" class="pill-btn"><span>turn the card</span></button>
+          </div>
+          <!-- Back -->
+          <div class="rsvp-face rsvp-back">
+            <form id="rsvp-form">
+              <div class="center">
+                <div class="script" style="font-size:1.8rem;color:oklch(0.45 0.1 60)">kindly reply</div>
+                <div class="mini-rule dark"></div>
+              </div>
+              <div class="ink-field">
+                <label>your name</label><input required name="name" type="text"/>
+              </div>
+              <div class="ink-field">
+                <label>number attending</label><input required name="count" type="number"/>
+              </div>
+              <div class="rsvp-choice">
+                <div class="ink-label">will you attend?</div>
+                <div class="rsvp-choices">
+                  <label><input type="radio" name="rsvp" checked/><div>joyfully</div></label>
+                  <label><input type="radio" name="rsvp"/><div>regretfully</div></label>
+                </div>
+              </div>
+              <button type="submit" class="send-btn"><span>send with love</span></button>
+            </form>
+            <div id="rsvp-thanks" class="rsvp-thanks" hidden>
+              <div class="script" style="font-size:3rem;color:oklch(0.35 0.09 155)">thank you</div>
+              <div class="display italic" style="color:oklch(0.25 0.03 150);margin-top:1rem">your reply has reached us.</div>
+              <div class="eyebrow" style="margin-top:1.5rem;color:oklch(0.5 0.1 60)">— A &amp; Z</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENE 11 · CLOSING -->
+    <section id="closing" class="closing">
+      <div class="closing-seal">
+        <svg viewBox="0 0 200 200" class="seal-emblem">
+          <circle cx="100" cy="100" r="90" fill="url(#sealGrad)"/>
+          <circle cx="100" cy="100" r="78" fill="none" stroke="oklch(0.3 0.08 45)" stroke-width="1" stroke-dasharray="2 3"/>
+          <g fill="none" stroke="oklch(0.28 0.06 45)" stroke-width="1.5" stroke-linecap="round">
+            <path d="M100 40 Q120 70 100 100 Q80 70 100 40 Z"/><path d="M100 160 Q120 130 100 100 Q80 130 100 160 Z"/>
+            <path d="M40 100 Q70 80 100 100 Q70 120 40 100 Z"/><path d="M160 100 Q130 80 100 100 Q130 120 160 100 Z"/>
+            <circle cx="100" cy="100" r="10" fill="oklch(0.3 0.08 45)"/>
+          </g>
+          <text x="100" y="105" text-anchor="middle" font-family="serif" font-size="18" fill="oklch(0.2 0.05 45)" font-style="italic">A · Z</text>
+        </svg>
+      </div>
+      <p class="closing-text display italic">we can't wait to celebrate with you.</p>
+      <div class="closing-text script gold-gradient" style="font-size:2.5rem;margin-top:2.5rem">Ayesha &amp; Zayan</div>
+      <div class="closing-text eyebrow" style="margin-top:4rem;color:oklch(0.55 0.05 80)">10 · 10 · 2026</div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
